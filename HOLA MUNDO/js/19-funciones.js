@@ -14,7 +14,7 @@ function calculadora(){
 
 //función dinámica:
 
-function calculadora(num1, num2, mostrar = false){
+function calculadora(num1, num2, mostrar = false){ //mostrar es una variable dinamica con el valor false aplicado por defecto
     console.log("Suma: "+(num1+num2));
     console.log("Resta: "+(num1-num2));
     console.log("Multiplicación: "+(num1*num2));
