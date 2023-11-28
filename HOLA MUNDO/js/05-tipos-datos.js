@@ -17,7 +17,7 @@ alert("el resultado de la operacion es "+operacion);
 //alert("tipos de datos");
 //tipos de datos
 var entero = 44; //numero entero
-var texto = "esto es un texto" //esto es un string
+var texto = "esto es un texto"; //esto es un string
 var bool = true; //esto es un booleano (true o false)
 bool = false;
 
@@ -29,6 +29,7 @@ console.log(Number(numero_falso)+7); //pasamos el sting a numero y sale 40
 //podemos usar parseFloat() para pasarlo a decimales o parseInt() para pasarlo a enteros
 
 console.log(String(entero)+" ahora es un string"); //usamos String() para pasar un numero a string
+console.log(entero.toString()+" tambien puedes usar toString() para pasar un numero a string");
 
 //usamos typeof para averiguar de qué tipo es una variable
 console.log(typeof entero);
