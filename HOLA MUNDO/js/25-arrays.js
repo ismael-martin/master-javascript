@@ -20,7 +20,7 @@ do {
 } while (elemento >= nombres.length || elemento < 0);
 
 alert(nombres[elemento]);
-*/
+
 
 //mostrar todos los elementos de un array por pantalla con un bucle
 document.write("<h1>Lenguajes de programación</h1>");
@@ -29,3 +29,28 @@ for (let i = 0; i < lenguajes.length; i++) {
     document.write("<li>"+lenguajes[i]+"</li>")    
 }
 document.write("</ul>");
+
+
+//otra forma de recorrer un array mucho más limpia
+lenguajes.forEach((element, index)=>
+document.write("<li>"+index+" "+element+"</li>"));
+
+*/
+//otra forma más de recorrer un array
+document.write("<ul>");
+for(let lengua in lenguajes){
+    document.write("<li>"+lenguajes[lengua]+"</li>");
+}
+document.write("</ul>");
+
+
+//busqueda en array
+var busqueda = lenguajes.find(lenguaje => lenguaje == "PHP"); //para buscar un valor
+var busquedaIndex = lenguajes.findIndex(lenguaje => lenguaje == "js"); //para buscar un indice
+console.log(busqueda); //devolverá undefined si la busqueda no coincide
+console.log(busquedaIndex); //devolverá undefined si la busqueda no coincide
+
+//metodo para buscar valores de según qué tipo
+var precios = [10,24,2,34,66,46,23,45,3];
+var busca = precios.some(precio => precio >= 40);//devuelve true porque cumple la condición
+console.log(busca);
